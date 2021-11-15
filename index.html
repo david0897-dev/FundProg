@@ -11,6 +11,7 @@
 	<!-- UIkit JS -->
 	<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.21/dist/js/uikit.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.21/dist/js/uikit-icons.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script> <!-- Google code prettify -->
 	<title>Python</title>
 </header>
 
@@ -49,7 +50,26 @@
     <div>
         <div class="uk-card uk-card-default uk-card-hover uk-card-body">
             <h3 class="uk-card-title">Cuaderno 1</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <p>
+		    <pre class="prettyprint lang-py">
+		    	def cantOptima (cantidad):
+			    """ float --> None
+				OBJ: desglosar cantidad en valor monetario europeo
+				PRE: """
+			    for pieza in EURO:
+				num_monedas = int(cantidad//pieza)
+				cantidad = round(cantidad%pieza, 2)
+				if num_monedas > 0:
+				    if pieza < 5:
+					print('Monedas de', pieza, 'euros:', num_monedas)
+				    else:
+					print('Billetes de', pieza, 'euros:', num_monedas)
+			#probador
+			'''print(cantOptima(50.0)) #caso 1: la cantidad solo es una pieza
+			print(cantOptima(25.57)) #caso 2: cantidad con dos decimales
+			print(cantOptima(25.5798)) #caso 3: cantidad con más de dos decimales'''
+		    </pre>
+	    </p>
         </div>
     </div>
     <div>
