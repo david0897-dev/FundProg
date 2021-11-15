@@ -51,24 +51,24 @@
         <div class="uk-card uk-card-default uk-card-hover uk-card-body">
             <h3 class="uk-card-title">Cuaderno 1</h3>
             <p>
-		    <pre class="prettyprint lang-py">
-def cantOptima (cantidad):
-	""" float --> None
-	OBJ: desglosar cantidad en valor monetario europeo
-	PRE: """
-	for pieza in EURO:
-		num_monedas = int(cantidad//pieza)
-		cantidad = round(cantidad%pieza, 2)
-		if num_monedas > 0:
-			if pieza < 5:
-				print('Monedas de', pieza, 'euros:', num_monedas)
-			else:
-				print('Billetes de', pieza, 'euros:', num_monedas)
-	#probador
-'''print(cantOptima(50.0)) #caso 1: la cantidad solo es una pieza
-print(cantOptima(25.57)) #caso 2: cantidad con dos decimales
-print(cantOptima(25.5798)) #caso 3: cantidad con más de dos decimales'''
-		    </pre>
+<!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:none ;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008000; font-weight: bold">def</span> <span style="color: #0000FF">cantOptima</span> (cantidad):
+<span style="color: #BA2121; font-style: italic">&quot;&quot;&quot; float --&gt; None</span>
+<span style="color: #BA2121; font-style: italic">        OBJ: desglosar cantidad en valor monetario europeo</span>
+<span style="color: #BA2121; font-style: italic">        PRE: &quot;&quot;&quot;</span>
+    <span style="color: #008000; font-weight: bold">for</span> pieza <span style="color: #AA22FF; font-weight: bold">in</span> EURO:
+        num_monedas <span style="color: #666666">=</span> <span style="color: #008000">int</span>(cantidad<span style="color: #666666">//</span>pieza)
+        cantidad <span style="color: #666666">=</span> <span style="color: #008000">round</span>(cantidad<span style="color: #666666">%</span>pieza, <span style="color: #666666">2</span>)
+        <span style="color: #008000; font-weight: bold">if</span> num_monedas <span style="color: #666666">&gt;</span> <span style="color: #666666">0</span>:
+            <span style="color: #008000; font-weight: bold">if</span> pieza <span style="color: #666666">&lt;</span> <span style="color: #666666">5</span>:
+                <span style="color: #008000; font-weight: bold">print</span>(<span style="color: #BA2121">&#39;Monedas de&#39;</span>, pieza, <span style="color: #BA2121">&#39;euros:&#39;</span>, num_monedas)
+            <span style="color: #008000; font-weight: bold">else</span>:
+                <span style="color: #008000; font-weight: bold">print</span>(<span style="color: #BA2121">&#39;Billetes de&#39;</span>, pieza, <span style="color: #BA2121">&#39;euros:&#39;</span>, num_monedas)
+<span style="color: #408080; font-style: italic">#probador</span>
+<span style="color: #BA2121; font-style: italic">&#39;&#39;&#39;print(cantOptima(50.0)) #caso 1: la cantidad solo es una pieza</span>
+<span style="color: #BA2121; font-style: italic">print(cantOptima(25.57)) #caso 2: cantidad con dos decimales</span>
+<span style="color: #BA2121; font-style: italic">print(cantOptima(25.5798)) #caso 3: cantidad con más de dos decimales&#39;&#39;&#39;</span>
+</pre></div>
+
 	    </p>
         </div>
     </div>
