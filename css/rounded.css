@@ -15,6 +15,7 @@ h1, h2, h3, h4, h5, h6, p, a, .uk-card-title {
 .uk-card {
     border-radius: 15px;
     margin: 5px;
+    transition: box-shadow .5s ease-in-out !important;
 }
 
 .uk-navbar-nav > li > a {
