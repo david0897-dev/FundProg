@@ -2,16 +2,6 @@ h1, h2, h3, h4, h5, h6, p, a, .uk-card-title {
     font-family: "Varela Round", sans-serif !important;
 }
 
-.fas, .fab {
-    color: slateblue;
-    font-size: 25px;
-    transition: .5s;
-}
-
-.fas:hover, .fab:hover {
-    color: blueviolet;
-}
-
 .uk-card {
     border-radius: 15px;
     margin: 5px;
