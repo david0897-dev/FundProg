@@ -1,0 +1,11 @@
+.uk-card {
+    border-radius: 15px;
+    margin: 5px;
+    transition: box-shadow .5s ease-in-out !important;
+}
+
+.uk-navbar-nav > li > a {
+    color: darkslategray !important;
+    font-size: 16px !important;
+    letter-spacing: 1px;
+}
